@@ -14,7 +14,7 @@ public class ItemsDAO {
 		// (1) ドライバクラスを指定
 		try {
 			// h2ドライバを指定
-			Class.forName();
+			Class.forName("");
 		} catch(ClassNotFoundException e) {
 			e.printStackTrace();
 		}
