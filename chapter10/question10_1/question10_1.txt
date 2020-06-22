@@ -1,0 +1,10 @@
+question 10_1
+次のような内容のプロパティファイルc:\pref.propertiesがあるとします。
+
+tokyo.capital = 東京
+tokyo.food = 寿司
+aichi.capital = 名古屋
+aichi.food = 味噌カツ
+
+このファイルの内容を読み込み、aichi.capitalとaichi.foodの内容を
+「名古屋：味噌カツ」の形式で画面に表示するプログラムを作成してください。

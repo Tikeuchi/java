@@ -1,0 +1,11 @@
+question8_1
+commons-langライブラリのJARファイル「commons-lang.jar」が、c:\javalibフォルダにあるとします。
+このライブラリを利用しているソースコードMain.javaをコンパイルして実行するために入力するコマンドを、
+以下の[      ]を埋めて完成させてください。
+ただし、現在のフォルダに対するクラスパスは環境変数CLASSPATHで設定されているものとします。
+
+コンパイル
+	>javac [   (1)   ] Main.java
+
+実行
+	>java [   (2)   ] Main

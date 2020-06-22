@@ -1,0 +1,18 @@
+question13_1
+以下のJavaソースファイルを作成し、変数名からクラスやメンバの意味を推測して、
+適切なJavadocコメントとタグを書き加え、javadocツールでプログラム仕様書を生成してください。
+
+public class Bank {
+	String name;
+	String address;
+	public void addAccount(String owner, int initialBalance) { }
+	public static void main(String[] args) {
+		System.out.println("試験用のメインメソッドです");
+	}
+}
+
+Eclipseでの手順：
+	1. パッケージ（プロジェクト）を選択して右クリックします。
+	2. 「エクスポート」⇒「Javadoc」を選択します。
+	3. エクスポート先を選択します。
+	4. 「完了」を選択します。

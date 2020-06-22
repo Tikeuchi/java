@@ -1,0 +1,4 @@
+question15_1
+question14_1で作成したBankクラスについて、
+BankTestテストクラスによるテストのカバレッジをCoberturaで計測してください
+（レポート中のLine Cocerageという表記が命令網羅率、Path Coverageが分岐網羅率です）。

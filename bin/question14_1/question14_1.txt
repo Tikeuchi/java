@@ -1,0 +1,34 @@
+question14_1
+以下のソースファイル「Bank.java」を検査するJUnitテストクラス「BankTest.java」を作成してください。
+その際には、できるだけ多くの検査が行えるようなテストケースをBankTest.java内に記述してください。
+
+public class Bank {
+	private String name;
+	public String getName() {
+		return this.name;
+	}
+	public void setName(String newName) {
+		if(newName.length() <= 3) {
+			throw new IllegalArgumentException("名前が不正です");
+		}
+		this.name = newName;
+	}
+}
+
+
+
+◇JUnitライブラリをビルド・パスに設定する
+
+JUnitはeclipceで用意されているので、ビルド・パスを設定する。
+
+(1) ビルド・パスの設定
+
+プロジェクトファイルを右クリックし「ビルド・パス」→「ビルド・パスの構成」をクリックする。
+「ライブラリー」→「ライブラリの追加」をクリックする。
+JUnitを選択して、「次へ」をクリックする。
+JUnitライブラリ・バージョン「JUnit 5」を選択して、「完了」をクリックする。
+「適用して閉じる」をクリックする。
+
+(2) 実行
+
+設定したJUnitライブラリを利用してテストケースが実行できることを確認する。

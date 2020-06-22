@@ -1,0 +1,39 @@
+question8_2
+chapter4のquestion4_1について、条件(1)を以下のように修正した課題を実施してください。
+
+旧：署名と発行日が同じであれば等価なものと判定され…
+				↓
+新：署名と発行日とコメントが同じであれば等価なものと判定され…
+
+その際、commons-langに含まれる以下のクラスを利用してください。
+
+・HashCodeBuilder
+・EqualsBuilder
+・CompareToBuilder
+
+
+
+◇commons-langライブラリのJARファイルをビルド・パスに設定する
+
+(1) commons-langライブラリをダウンロードする
+
+https://commons.apache.org/proper/commons-lang/download_lang.cgi
+上記のサイトからcommons-lang3-3.10-bin.zipをダウンロードする。
+
+(2) JARファイルの配置
+
+ダウンロードしたファイルを解凍して、JARファイルを確認する。
+・commons-lang3-3.10.jar
+
+c:\javalibフォルダを作成して、JARファイルを移動する。
+
+(3) ビルド・パスの設定
+
+プロジェクトファイルを右クリックし「ビルド・パス」→「ビルド・パスの構成」をクリックする。
+「ライブラリー」→「外部JARの追加」をクリックする。
+C:\javalib\commons-lang3-3.10.jarを選択して、「開く」をクリックする。
+「適用して閉じる」をクリックする。
+
+(4) 実行
+
+設定したcommons-langライブラリを利用して実行できることを確認する。

@@ -1,0 +1,17 @@
+question 10_2
+次のような「社員クラス」と「部署クラス」があるとします。
+
+// 社員クラス
+public class Employee implements java.io.Serializable {
+	String name;
+	int age;
+}
+// 部署クラス
+public class Department implements java.io.Serializable {
+	String name;
+	Employee leader;
+}
+
+「総務部」のリーダー「田中太郎（41歳）」のインスタンスをJVM内に生成したうえで、
+直列化機構を使ってファイルC:\javatest\company.datに書き込むプログラムを作成してください。
+なお、上記2つのクラスを必要な範囲で修正してください。

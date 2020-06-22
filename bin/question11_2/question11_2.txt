@@ -1,0 +1,17 @@
+question12_2
+以下のような形式のデータを送ると、メールを送信してくれるサービスが
+「smtp.example.com」の60025番ポートで動作しているとします。
+
+HELO example.com
+MAIL FROM: asaka@example.com
+RCPT TO: minato@example.com
+DATA
+From: asaka@example.com
+Subject: Please send me your RPG
+Hello minato. I would like to play your RPG.
+Could you please send it to me ?
+.
+QUIT
+
+上記のデータをサーバーに送り、メールを発信するプログラムを作成してください。
+ただし、サーバーに送るデータの改行コードとしては"\r\n"をつかうものとします。

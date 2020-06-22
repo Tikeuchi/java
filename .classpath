@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="src" path="chapter01"/>
+	<classpathentry kind="src" path="chapter02"/>
+	<classpathentry kind="src" path="chapter03"/>
+	<classpathentry kind="src" path="chapter04"/>
+	<classpathentry kind="src" path="chapter05"/>
+	<classpathentry kind="src" path="chapter06"/>
+	<classpathentry kind="src" path="chapter07"/>
+	<classpathentry kind="src" path="chapter08"/>
+	<classpathentry kind="src" path="chapter09"/>
+	<classpathentry kind="src" path="chapter10"/>
+	<classpathentry kind="src" path="chapter11"/>
+	<classpathentry kind="src" path="chapter12"/>
+	<classpathentry kind="src" path="chapter13"/>
+	<classpathentry kind="src" path="chapter14"/>
+	<classpathentry kind="src" path="chapter15"/>
+	<classpathentry kind="src" path="chapter16"/>
+	<classpathentry kind="src" path="chapter17"/>
+	<classpathentry kind="src" path="chapter18"/>
+	<classpathentry kind="src" path="chapter19"/>
+	<classpathentry kind="lib" path="C:/javalib/h2-1.4.199.jar"/>
+	<classpathentry kind="lib" path="C:/javalib/commons-lang3-3.10.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

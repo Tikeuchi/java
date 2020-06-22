@@ -1,0 +1,5 @@
+question16_1
+以下のレポジトリにアクセスして自分のPCへチェックアウトしてください。
+ローカルコピーの場所はどこでも構いません。
+
+http://github.com/miyabilink/sukkiri-java-practice

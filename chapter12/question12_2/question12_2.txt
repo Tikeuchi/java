@@ -1,0 +1,73 @@
+question12_2
+次のようなMainクラスがあります。
+このクラスが呼び出しているItemsDAOクラスを作成してください。
+なお、トランザクション制御は行わなくて構いません。
+
+public class Main {
+	public static void main(String[] args) {
+		System.out.println("1円以上のアイテム一覧表を表示します");
+		ArrayList<Item> items = ItemsDAO.findByMinimumPrice(1);
+		for(Item item : items) {
+			System.out.printf("%10s%4d%4d", item.getName(), item.getPrice(), item.getWeight());
+		}
+	}
+}
+
+※送るべきSQLは「SELECT * FROM ITEMS WHERE PRICE > 1」です。
+
+
+
+◇H2 Databaseの準備とデータの用意
+
+(1) H2 DatabaseのJDBCドライバをダウンロードする
+
+http://www.h2database.com/html/download.html
+上記のサイトから
+Version 1.4.199 (2019-03-13), Last Stable
+Platform-Independent Zip(h2-2019-03-13.zip)をダウンロードする。
+
+(2) JDBCドライバの配置
+
+ダウンロードしたファイルを解凍して、JARファイルを確認する。
+・h2-2019-03-13/
+    h2/
+      bin/
+        h2-1.4.199.jar
+
+c:\javalibフォルダに、JARファイルを移動する。
+
+(3) DBViewerのインストール
+
+・インストール
+eclipceのメニューから「ヘルプ」→「Eclipse マーケットプレース…」をクリックする。
+「DBViewer」と入力して検索して、表示された「インストール」ボタンをクリックする。
+ライセンスのレビューで「同意します」にチェックを入れて、「完了」ボタンをクリックする。
+セキュリティ警告が出たら「インストール」をクリックする。
+インストール後にeclipceの再起動をします。
+
+・再起動後
+eclipceのメニューから「ウィンドウ」→「パースペクティブ」→「パースペクティブを開く」→「その他」をクリックする。
+「DBViewer」を選択して「開く」をクリックする。
+
+(4) DBViewerの作業
+
+・データベースの登録
+「DBViewerPlugin」を右クリックして、メニューから「登録」をクリックする。
+データベース定義名に「rpgdb」と入力する。
+「ファイルの追加」をクリックして、C:\javalib\h2-1.4.199.jarを選択して「開く」をクリックする。
+「次へ」をクリックする。
+
+接続文字列には以下を設定する。
+  jdbc:h2:~/rpgdb
+テスト接続をクリックして、接続に成功することを確認する。
+
+「完了」ボタンをクリックして、データベースを登録する。
+
+・テーブルの追加
+
+SQL実行・ビューにSQLを記述して、テーブルを作成する。
+CREATE文を実行したらコミットを実行する。
+
+・テーブルの切断
+
+テーブルの追加が完了したら、「rpgdb」を右クリックして、メニューから「切断」をクリックする。
