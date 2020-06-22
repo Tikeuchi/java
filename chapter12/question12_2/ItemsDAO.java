@@ -23,9 +23,9 @@ public class ItemsDAO {
 		// (3) データベースに接続
 		try {
 			// 接続先のデータベースを指定
-			con = DriverManager.getConnection("jdbc:h2:~/rpgdb");
+			con = DriverManager.getConnection("");
 			// prepareStatementメソッドでSQL文を用意
-			PreparedStatement pstmt = con.prepareStatement("SELECT * FROM ITEMS WHERE PRICE > ?");
+			PreparedStatement pstmt = con.prepareStatement("");
 			// SQLに挿入する値を用意
 			pstmt.setInt();
 			// SQLの実行結果を保存

@@ -1,6 +1,0 @@
-question16_1_anser
-WindowsでTortoiseSVNを利用する場合：
-(1) 自分のPCにチェックアウト先のディレクトリを作成します。(仮にc:\localcopyとします)
-(2) Windowsのエクスプローラーlocalcopyフォルダを開いて、右クリック→「SVN Checkout…」を選びます。
-(3) レポジトリの場所として「https://github.com/miyabilink/sukkiri-java-practice」を選び、
-    さらにチェックアウト先として「c:\localcopy」を選びOKをクリックします。

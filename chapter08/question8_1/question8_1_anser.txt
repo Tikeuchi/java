@@ -1,6 +1,0 @@
-question8_1_anser
-コンパイル
-	>javac -cp c:\jabalib\commons-lang.jar Main.java
-
-実行
-	>java -cp c:\jabalib\commons-lang.jar Main
