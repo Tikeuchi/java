@@ -9,12 +9,12 @@ public class Main {
 		String inFile = args[0];
 		String outFile = args[1];
 		// (2) FileInputStreamクラスとFileOutputStreamクラスにセット
-		FileInputStream fis = new FileInputStream(inFile);
-		FileOutputStream fos = new FileOutputStream(outFile);
+		FileInputStream fis;
+		FileOutputStream fos;
 		// (3) ファイル読み書きの処理
-		int i = fis.read();
-		while(i != -1) {
-			fos.write(i); i = fis.read();
+		int i;
+		while() {
+
 		}
 		// (4) ファイル読み書きを終了
 		fos.flush();

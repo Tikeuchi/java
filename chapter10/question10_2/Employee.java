@@ -1,7 +1,6 @@
 package question10_2;
 
-// 直列化に対応
-public class Employee implements java.io.Serializable {
+class Employee {
 	String name;
 	int age;
 }

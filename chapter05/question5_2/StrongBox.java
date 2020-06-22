@@ -10,11 +10,11 @@ public class StrongBox<E> {
 	private long count;
 	// (5) StrongBoxのKeyTypeを取得するコンストラクタを作成
 	public StrongBox (KeyType key) {
-		this.keyType = key;
+
 	}
 	// (6) インスタンスを保存するメソッドを作成
 	public void put(E i) {
-		this.item = i;
+
 	}
 	// (7) インスタンスを取得するメソッドを作成
 	public E get() {
@@ -37,6 +37,6 @@ public class StrongBox<E> {
 		}
 		// switch-case文を抜けたら、施行回数をリセットしてインスタンスを返す
 		this.count = 0;
-		return this.item;
+		return ;
 	}
 }

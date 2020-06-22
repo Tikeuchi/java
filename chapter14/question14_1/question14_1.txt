@@ -1,4 +1,5 @@
 question14_1
+
 以下のソースファイル「Bank.java」を検査するJUnitテストクラス「BankTest.java」を作成してください。
 その際には、できるだけ多くの検査が行えるようなテストケースをBankTest.java内に記述してください。
 

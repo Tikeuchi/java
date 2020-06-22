@@ -1,4 +1,5 @@
 question16_3
+
 以下のバグ追跡システムにWebブラウザでアクセスして、どのようなチケットがあるかを確認してみましょう。
 
 http://github.com/miyabilink/sukkiri-java-practice/issues

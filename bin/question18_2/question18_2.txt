@@ -1,4 +1,5 @@
 question18_2
+
 デザインパターンを活用し次の条件に沿ったMyLoggerクラスを作ってください。
 なお、今回の練習問題に限り、ファイルを閉じる処理は省略して構いません。
 
@@ -7,7 +8,7 @@ question18_2
 ・次のようなMainクラスからの利用でもエラーを出さず、
   2つのログメッセージが同一ファイルに順番に出力されること。
 
-MyLogger　logger1 = (ここでロガーのインスタンスを取得)
+MyLogger logger1 = (ここでロガーのインスタンスを取得)
 logger1.log("first");
-MyLogger　logger2 = (ここでロガーのインスタンスを取得)
+MyLogger logger2 = (ここでロガーのインスタンスを取得)
 logger2.log("second");

@@ -1,4 +1,5 @@
 question4_1
+
 次のような書籍クラス（Bookクラス）があります。
 
 public class Book implements Comparable<Book>, Cloneable {

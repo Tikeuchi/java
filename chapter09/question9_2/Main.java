@@ -12,20 +12,20 @@ public class Main {
 		String inFile = args[0];
 		String outFile = args[1];
 		// (2) クラスの初期化
-		FileInputStream fis = null;
-		GZIPOutputStream gzos = null;
+		FileInputStream fis;
+		GZIPOutputStream gzos;
 		// (3) try-catch文でファイル圧縮の処理を実行
 		try {
 			// それぞれの値をセット
-			fis = new FileInputStream(inFile);
-			FileOutputStream fos = new FileOutputStream(outFile);
-			BufferedOutputStream bos = new BufferedOutputStream(fos);
-			gzos = new GZIPOutputStream(bos);
+			fis = new FileInputStream();
+			FileOutputStream fos = new FileOutputStream();
+			BufferedOutputStream bos = new BufferedOutputStream();
+			gzos = new GZIPOutputStream();
 			// ファイル圧縮の処理
-			int i = fis.read();
-			while(i != -1) {
-				gzos.write(i);
-				i = fis.read();
+			int i;
+			while() {
+
+
 			}
 			// ファイル圧縮を終了
 			gzos.flush();

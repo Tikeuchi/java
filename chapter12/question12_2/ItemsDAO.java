@@ -14,7 +14,7 @@ public class ItemsDAO {
 		// (1) ドライバクラスを指定
 		try {
 			// h2ドライバを指定
-			Class.forName("org.h2.Driver");
+			Class.forName();
 		} catch(ClassNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -24,30 +24,30 @@ public class ItemsDAO {
 		try {
 			// 接続先のデータベースを指定
 			con = DriverManager.getConnection("jdbc:h2:~/rpgdb");
-			// PreparedStatementクラスでSQL文を用意
+			// prepareStatementメソッドでSQL文を用意
 			PreparedStatement pstmt = con.prepareStatement("SELECT * FROM ITEMS WHERE PRICE > ?");
 			// SQLに挿入する値を用意
-			pstmt.setInt(1, i);
+			pstmt.setInt();
 			// SQLの実行結果を保存
-			ResultSet rs = pstmt.executeQuery();
+			ResultSet rs;
 			// Itemを格納するArrayListを用意
 			ArrayList<Item> items = new ArrayList<Item>();
 			// SQLの実行結果を処理
-			while(rs.next()) {
+			while() {
 				// itemインスタンスを用意
 				Item item = new Item();
 				// 1行分の情報をインスタンスに変換
-				item.setName(rs.getString("NAME"));
-				item.setPrice(rs.getInt("PRICE"));
-				item.setWeight(rs.getInt("WEIGHT"));
+				item.setName();
+				item.setPrice();
+				item.setWeight();
 				// インスタンスをArrayListに格納
-				items.add(item);
+
 			}
 			// SQLの実行を終了
 			rs.close();
 			pstmt.close();
 			// SQLの結果を返す
-			return items;
+			return ;
 		// (4) 例外処理
 		} catch(SQLException e) {
 			e.printStackTrace();
@@ -55,10 +55,10 @@ public class ItemsDAO {
 		// (5) 必ず行う処理
 		} finally {
 			// Connectionオブジェクトがある（nullではない）場合
-			if(con != null) {
+			if() {
 				try {
 					// データベースを終了
-					con.close();
+
 				} catch(SQLException e) {
 					e.printStackTrace();
 				}

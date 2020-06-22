@@ -20,7 +20,6 @@
 	<classpathentry kind="src" path="chapter17"/>
 	<classpathentry kind="src" path="chapter18"/>
 	<classpathentry kind="src" path="chapter19"/>
-	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="lib" path="C:/javalib/h2-1.4.199.jar"/>
 	<classpathentry kind="lib" path="C:/javalib/commons-lang3-3.10.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/5"/>
