@@ -13,7 +13,7 @@
 	<classpathentry kind="src" path="chapter10"/>
 	<classpathentry kind="src" path="chapter11"/>
 	<classpathentry kind="src" path="chapter12"/>
-	<classpathentry kind="src" path="chapter13"/>
+	<classpathentry excluding="question13_2/atm/question13_1/" kind="src" path="chapter13"/>
 	<classpathentry kind="src" path="chapter14"/>
 	<classpathentry kind="src" path="chapter15"/>
 	<classpathentry kind="src" path="chapter16"/>
